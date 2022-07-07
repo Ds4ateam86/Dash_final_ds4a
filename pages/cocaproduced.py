@@ -120,7 +120,7 @@ layout=  dbc.Container(
             dbc.Col([
 
 
-                dcc.Graph('drugerr_graph1', style = {'margin-bottom': '20px'}),
+                dcc.Graph('drugerr_graph1', style = {'margin-bottom': '20px','margin-top': '20px'}),
                 dcc.Graph('drugerr2_graph1', style = {'margin-top': '20px'}),
             ], xs=12, className='card'),
             dbc.Col([

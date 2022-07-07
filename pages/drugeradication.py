@@ -81,7 +81,7 @@ layout=  dbc.Container(
               
             ]),
             dbc.Col([
-                dcc.Graph("cocaprodair_graph1", style = {'margin-bottom': '20px'}),
+                dcc.Graph("cocaprodair_graph1", style = {'margin-bottom': '20px', 'margin-top': '20px'}),
                 dcc.Graph("cocaprodhand_graph1", style = {'margin-top': '20px'}),
             ], xs=12, className='card'),            
         ]),     

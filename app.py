@@ -27,7 +27,7 @@ navbar = dbc.NavbarSimple([
         nav=True,
         label="Subjects",
     ),
-    dbc.NavItem(dbc.NavLink("Team")),
+    dbc.NavItem(dbc.NavLink("Team", href='team')),
     ],
     brand="DS4A Project - Analysis of illegal crops and their relationship to Colombian laws passed by Congress  -Team 86",
     color="primary",

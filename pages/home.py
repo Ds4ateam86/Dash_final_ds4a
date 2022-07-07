@@ -3,13 +3,11 @@ from dash import html , dcc
 import dash_bootstrap_components as dbc
 from dash_labs.plugins import register_page
 import statsmodels.api as sm
-
+import plotly.express as px
+import pandas as pd
 
 register_page(__name__, path="/")
 
-from components.kpi.kpibadge import kpibadge
-import plotly.express as px
-import pandas as pd
 predictions=pd.read_csv('data/modelo.csv')
 predictions1=predictions[['Departamento','Coca Cultivation Area']]
 predictions2=predictions[['Departamento','Predicted']]
@@ -22,11 +20,6 @@ final=final.groupby(['Departamento','Hue'])['Area'].mean()
 final=final.reset_index()
 
 fig = px.bar(x=final['Departamento'], y=final['Area'], color=final['Hue'], barmode='group', width=500, height=500)
-
-kpi1 = kpibadge('325', 'Total kpi', 'Danger')
-kpi2 = kpibadge('1500', 'Total sales', 'Approved')
-kpi3 = kpibadge('325', 'Total transacciones', 'Approved')
-kpi4 = kpibadge('2122','Total User', 'Danger')
 
 data_leyes_coca_area = pd.read_csv('data/base_leyes_coca_area.csv')
 data_leyes_coca_area['ano'] = data_leyes_coca_area['ano'].astype('str')

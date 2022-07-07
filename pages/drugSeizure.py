@@ -47,7 +47,7 @@ layout=  dbc.Container(
             ]),
             dbc.Col([
 
-                dcc.Graph("pie_graph", style= {'margin-bottom':'50px'}),
+                dcc.Graph("pie_graph", style= {'margin-bottom':'50px', 'margin-top': '20px'}),
                 dcc.Graph("hist_graph", style= {'margin-top':'50px'}),
             ], xs=12, className='card'),            
         ]),     
