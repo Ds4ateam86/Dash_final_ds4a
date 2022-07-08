@@ -9,8 +9,8 @@ For making the code work yo should:
 -Clone this repository in your computer
 
 
--Install al the requirements in the requirements.txt 
+-Install al the requirements in the requirements.txt file
 
 
--run the command python app.py
+-Run the command python app.py
 
