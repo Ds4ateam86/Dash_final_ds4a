@@ -3,3 +3,6 @@ jupyter-dash
 pandas
 dash-labs
 dash-bootstrap-components
+sklearn
+statsmodels
+Pillow
